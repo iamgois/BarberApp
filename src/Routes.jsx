@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home"
 import Login from "./components/login/Login"
 import Register from "./components/register/Register"
+import Unidade from "./components/unidade/Unidade"
 
 export default () => {
 
@@ -11,6 +12,7 @@ export default () => {
                 <Route path="/" caseSensitive={false} element={<Home />}/>
                 <Route path="/login" caseSensitive={false} element={<Login />}/>
                 <Route path="/register" caseSensitive={false} element={<Register />}/>
+                <Route path="/unidade" caseSensitive={false} element={<Unidade />}/>
             </Routes>
     );
 }
