@@ -5,7 +5,7 @@ import Header from './Header'
 import Logo from './Logo'
 import Navbar from './Navbar'
 
-function ManejoProfissional() {
+function DataManejo() {
   return (
     <div className='bg-[#1A1A1A] h-screen w-screen flex flex-col items-center overflow-hidden justify-between'>
         <Navbar />
@@ -17,4 +17,4 @@ function ManejoProfissional() {
   )
 }
 
-export default ManejoProfissional
+export default DataManejo

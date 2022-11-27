@@ -7,7 +7,8 @@ import Unidade from "./components/unidade/Unidade"
 import Manejo from "./components/unidades/manejo/home/Manejo";
 import Patiomix from "./components/unidades/patiomix/home/Patiomix";
 import Resende from "./components/unidades/resende/home/Resende";
-import ManejoProfissional from "./components/unidades/manejo/data/ManejoProfissional";
+import ProfissionaisManejo from './components/unidades/manejo/profissionais/ProfissionaisManejo'
+import DataManejo from './components/unidades/manejo/datas/DatasManejo'
 
 export default () => {
 
@@ -20,7 +21,8 @@ export default () => {
                 <Route path="/manejo" caseSensitive={false} element={<Manejo />}/>
                 <Route path="/patiomix" caseSensitive={false} element={<Patiomix />}/>
                 <Route path="/resende" caseSensitive={false} element={<Resende />}/>
-                <Route path="/manejo/data" caseSensitive={false} element={<ManejoProfissional />}/>
-            </Routes>
+                <Route path="/manejo/profissionaismanejo" caseSensitive={false} element={<ProfissionaisManejo />}/>
+                <Route path="/manejo/datasmanejo" caseSensitive={false} element={<DataManejo />}/>
+                </Routes>
     );
 }
