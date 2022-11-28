@@ -4,7 +4,7 @@ function Form() {
 
     return (
         <div>
-            <form id='services' className='flex flex-col items-center'>
+            <form action='/manejo/profissionaismanejo' id='services' className='flex flex-col items-center'>
 
                 <div className='flex items-center justify-center'>
                     <input type="checkbox" name="corte" id="corte" className='cursor-pointer appearance-none w-64 h-10 bg-transparent border-2 border-[#E95401] checked:bg-[#E95401] rounded-full transition ease-in-out duration-300'/>
