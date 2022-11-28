@@ -1,6 +1,6 @@
 import React from 'react'
-import barberOne from '../../../../../public/barber-manejo-1.jpg'
-import barberTwo from '../../../../../public/barber-manejo-2.jpg'
+import barberOne from '/src/assets/barber-manejo-1.jpg'
+import barberTwo from '/src/assets/barber-manejo-2.jpg'
 import Profissionais from '../../../unidadeInfos/Profissionais'
 
 function Form() {
