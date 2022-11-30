@@ -1,9 +1,9 @@
 import React from 'react'
 import Form from './Form'
-import Footer from './Footer'
-import Header from './Header'
+import Footer from '../universal/Footer'
+import Header from '../universal/Header'
 import Logo from './Logo'
-import Navbar from './Navbar'
+import Navbar from '../universal/Navbar'
 
 function Register() {
   return (
