@@ -12,9 +12,9 @@ function Form() {
         let isPassword = document.getElementById('password').value
 
         if(isEmail === email && isPassword === password){
-            return console.log('Email e Senha Correto!')
+            window.location.href = '/unidade'
         }else{
-            return console.log('Credenciais erradas!')
+            alert('Email ou senha incorretos!')
         }
     }
 
