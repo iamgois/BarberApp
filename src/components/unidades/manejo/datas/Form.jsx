@@ -7,6 +7,8 @@ function Form() {
         e.preventDefault()
         
         let date = document.getElementById('date').value
+
+        window.location.href = '/manejo/horarios'
         
         return localStorage.setItem('Data', date)
 

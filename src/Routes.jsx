@@ -9,6 +9,9 @@ import Patiomix from "./components/unidades/patiomix/home/Patiomix";
 import Resende from "./components/unidades/resende/home/Resende";
 import ProfissionaisManejo from './components/unidades/manejo/profissionais/ProfissionaisManejo'
 import DataManejo from './components/unidades/manejo/datas/DatasManejo'
+import HorariosManejo from './components/unidades/manejo/horarios/HorariosManejo'
+
+import Confirmation from './components/confirmation/Confirmation'
 
 export default () => {
 
@@ -23,6 +26,8 @@ export default () => {
                 <Route path="/resende" caseSensitive={false} element={<Resende />}/>
                 <Route path="/manejo/profissionaismanejo" caseSensitive={false} element={<ProfissionaisManejo />}/>
                 <Route path="/manejo/datasmanejo" caseSensitive={false} element={<DataManejo />}/>
-                </Routes>
+                <Route path="/manejo/horarios-manejo" caseSensitive={false} element={<HorariosManejo />}/>
+                <Route path="/confirmation" caseSensitive={false} element={<Confirmation />}/>
+            </Routes>
     );
 }

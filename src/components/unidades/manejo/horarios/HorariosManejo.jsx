@@ -10,7 +10,7 @@ function DataManejo() {
     <div className='bg-[#1A1A1A] h-screen w-screen flex flex-col items-center overflow-hidden justify-between'>
         <Navbar />
         <Logo />
-        <Header title='Selecione uma data'/>
+        <Header title='Selecione um horário'/>
         <Form />
         <Footer />
     </div>
