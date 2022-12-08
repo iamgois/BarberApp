@@ -1,17 +1,28 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom";
+
+/* Universal */
 import Home from "./components/home/Home"
 import Login from "./components/login/Login"
 import Register from "./components/register/Register"
 import Unidade from "./components/unidade/Unidade"
+
+import Confirmation from './components/confirmation/Confirmation'
+import Released from './components/confirmation/Released'
+
+/* Manejo */
 import Manejo from "./components/unidades/manejo/home/Manejo";
-import Patiomix from "./components/unidades/patiomix/home/Patiomix";
-import Resende from "./components/unidades/resende/home/Resende";
 import ProfissionaisManejo from './components/unidades/manejo/profissionais/ProfissionaisManejo'
 import DataManejo from './components/unidades/manejo/datas/DatasManejo'
 import HorariosManejo from './components/unidades/manejo/horarios/HorariosManejo'
 
-import Confirmation from './components/confirmation/Confirmation'
+/* Patiomix */
+import Patiomix from "./components/unidades/patiomix/home/Patiomix";
+
+/* Rensede */
+import Resende from "./components/unidades/resende/home/Resende";
+
+
 
 export default () => {
 
@@ -28,6 +39,7 @@ export default () => {
                 <Route path="/manejo/datasmanejo" caseSensitive={false} element={<DataManejo />}/>
                 <Route path="/manejo/horarios-manejo" caseSensitive={false} element={<HorariosManejo />}/>
                 <Route path="/confirmation" caseSensitive={false} element={<Confirmation />}/>
+                <Route path="/released" caseSensitive={false} element={<Released />}/>
             </Routes>
     );
 }

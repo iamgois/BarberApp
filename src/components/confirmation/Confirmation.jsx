@@ -4,7 +4,7 @@ import Header from '../universal/Header'
 import Logo from '../universal/Logo'
 import Navbar from '../universal/Navbar'
 
-function DataManejo() {
+function Confirmation() {
 
   var date = localStorage.getItem('Data')
   var unidade = localStorage.getItem('unidade')
@@ -30,7 +30,7 @@ function DataManejo() {
           <p className='border-[1px] border-[#E95401] w-56 h-10 text-center m-1 flex items-center justify-center rounded-xl font-medium'>Horário: {horario}</p>
         </div>
 
-        <button className='text-white border-2 border-[#E95401] w-52 h-10 rounded-xl hover:bg-[#E95401] transition ease-in-out '>Confirmar</button>
+        <button onClick={() => window.location.href = '/released'} className='text-white border-2 border-[#E95401] w-52 h-10 rounded-xl hover:bg-[#E95401] transition ease-in-out '>Confirmar</button>
 
 
         <Footer />
@@ -38,4 +38,4 @@ function DataManejo() {
   )
 }
 
-export default DataManejo
+export default Confirmation
